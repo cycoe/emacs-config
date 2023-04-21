@@ -9,6 +9,7 @@
 
 (require 'init-package)
 (require 'init-edit)
+(require 'init-prog)
 (require 'init-company)
 (require 'init-lsp)
 (require 'init-org)
