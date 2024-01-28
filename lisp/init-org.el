@@ -5,9 +5,10 @@
   (setq org-confirm-babel-evaluate nil
 	org-src-fontify-natively t
 	org-src-tab-acts-natively t)
-  (defvar load-language-list
-    '((emacs-lisp . t)
-      (python . t)
-      (c++ . t))))
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((emacs-lisp . t)
+     (python . t)
+     (haskell . t))))
 
 (provide 'init-org)
