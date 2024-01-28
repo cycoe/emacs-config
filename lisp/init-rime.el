@@ -1,6 +1,6 @@
 (use-package rime
   :config
-  (setq rime-show-candidate 'posframe
+  (setq rime-show-candidate 'minibuffer
 	rime-posframe-style 'vertical
 	rime-disable-predicates
 	'(rime-predicate-evil-mode-p
