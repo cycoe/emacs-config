@@ -23,8 +23,6 @@
   :init
   (which-key-mode))
 
-(use-package magit)
-
 (use-package ace-window
   :bind
   (("C-x o" . 'ace-window)))
@@ -56,5 +54,15 @@
 (use-package avy
   :bind
   (("C-c a" . 'avy-goto-char-timer)))
+
+(use-package evil
+  :init
+  (evil-mode))
+
+(use-package fzf
+  :bind
+  (("C-c f" . 'fzf-projectile)))
+
+(use-package projectile)
 
 (provide 'init-edit)
